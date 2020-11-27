@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ <h1>The Ajax 04 Page</h1>
+ <fieldset>
+    <legend>Ajax 表单请求</legend>
+    <form>
+       <input type="text" id="nameId" name="name" onblur="doCheck()">
+       <input type="button" onclick="doSave()" value="Save">
+    </form>
+    <span id="resultId"></span><!-- 此位置显示服务端响应结果 -->
+ </fieldset>
+ <script type="text/javascript" src="../js/ajaxfk01.js"></script>
+ <script type="text/javascript">
+       //检测名字是否已存在
+       function doCheck(){
+    	   //1.定义请求的url
+    	   var url="http://localhost:8080/AJ01/ajax/doCheck";
+    	   //2.定义请求参数
+    	   var name=document.forms[0].name.value;
+    	   var params=`name=${name}`;
+    	   //3.发送ajax get请求
+    	   $$.doAjaxGet(url,params,(result)=>{
+    		   document.getElementById("resultId").innerHTML=
+    			   `<font color=red>${result}</font>`;
+    	   });
+       }
+       //保存表单中名字的值
+       function doSave(){//debugger,log,排除法
+    	  //1.请求url
+    	  const url="http://localhost:8080/AJ01/ajax/doSave";
+    	  //2.请求参数
+    	  let name=document.forms[0].name.value;
+    	  let params=`name=${name}`;
+    	  //3.发送ajax post请求
+    	  $$.doAjaxPost(url,params,(result)=>{
+    		    alert(result);
+    	  })
+       }
+ </script>
+</body>
+</html>

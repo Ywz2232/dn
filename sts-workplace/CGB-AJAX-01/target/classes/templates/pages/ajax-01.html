@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ajax-01 Page</title>
+</head>
+<body>
+	<h1>The Ajax-01 Page</h1>
+	<fieldset>
+		<legend>Ajax 异步请求</legend>
+		<button onclick="doAjaxGet()">Ajax Get Request</button>
+		<span id="resultId"></span>
+	</fieldset>
+
+</body>
+<script type="text/javascript">
+	function doAjaxGet(){
+		//1.创建xhr对象
+		var xhr = new XMLHttpRequest();
+		//2.设置xhr多想的事件监听函数
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4&&xhr.status==200){
+                var result=document.getElementById("resultId");
+                result.innerHTML=xhr.responseText;
+           }
+		}
+		//3.建立连接
+		xhr.open("GET","http://localhost:8080/AJ01/ajax/AjaxGet",true);
+		//4.发送请求
+		 xhr.send();
+	}
+</script>
+</html>

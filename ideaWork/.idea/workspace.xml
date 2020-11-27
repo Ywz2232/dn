@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="296125ea-3aba-4907-ace2-8c6a4ab76fea" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1elIzcSxJNU1wiRbSHinc39IBnb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cbg2006" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/cbg2006/src/cn/tedu/day17_5" />
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Practice_selltrick" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tedu.day17.Practice_selltrick" />
+      <module name="cbg2006" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tedu.day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tedu.day17_5.Test" />
+      <module name="cbg2006" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tedu.day17_5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tedu.day18.Test01" />
+      <module name="cbg2006" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tedu.day18.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tedu.day17.Test02" />
+      <module name="cbg2006" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tedu.day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tedu.day17.Test03" />
+      <module name="cbg2006" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tedu.day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Test01" />
+        <item itemvalue="Application.Practice_selltrick" />
+        <item itemvalue="Application.Test03" />
+        <item itemvalue="Application.Test02" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="296125ea-3aba-4907-ace2-8c6a4ab76fea" name="Default Changelist" comment="" />
+      <created>1594890015352</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594890015352</updated>
+      <workItem from="1594890017773" duration="6984000" />
+      <workItem from="1594945994316" duration="3730000" />
+      <workItem from="1594954389090" duration="17037000" />
+      <workItem from="1595032417652" duration="18393000" />
+      <workItem from="1595204472810" duration="27026000" />
+      <workItem from="1595291139670" duration="22401000" />
+      <workItem from="1595377613554" duration="28183000" />
+      <workItem from="1595465703885" duration="7011000" />
+      <workItem from="1595473695163" duration="12069000" />
+      <workItem from="1595550228596" duration="24640000" />
+      <workItem from="1595637012551" duration="4892000" />
+      <workItem from="1596696554602" duration="36000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="734" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1595579820257">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="734" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1595579820257" />
+    <state x="92" y="92" width="1674" height="896" key="DiffContextDialog" timestamp="1595646791268">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="92" y="92" width="1674" height="896" key="DiffContextDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1595646791268" />
+    <state x="708" y="294" key="FileChooserDialogImpl" timestamp="1596696589187">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="708" y="294" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1596696589187" />
+    <state width="738" height="981" key="GridCell.Tab.0.bottom" timestamp="1595646791229">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="738" height="981" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1595646791229" />
+    <state width="738" height="981" key="GridCell.Tab.0.center" timestamp="1595646791229">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="738" height="981" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1595646791229" />
+    <state width="738" height="981" key="GridCell.Tab.0.left" timestamp="1595646791228">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="738" height="981" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1595646791228" />
+    <state width="738" height="981" key="GridCell.Tab.0.right" timestamp="1595646791229">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="738" height="981" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1595646791229" />
+    <state x="569" y="242" key="NewModule_or_Project.wizard" timestamp="1595646789693">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="569" y="242" key="NewModule_or_Project.wizard/0.0.1858.1080@0.0.1858.1080" timestamp="1595646789693" />
+    <state x="271" y="180" key="SettingsEditor" timestamp="1595562439812">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="271" y="180" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1595562439812" />
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1595207938815">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1858.1080@0.0.1858.1080" timestamp="1595207938815" />
+    <state x="659" y="298" key="extract.method.dialog" timestamp="1595385515726">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="659" y="298" key="extract.method.dialog/0.0.1858.1080@0.0.1858.1080" timestamp="1595385515726" />
+    <state x="299" y="149" key="new project wizard" timestamp="1595646562541">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="299" y="149" key="new project wizard/0.0.1858.1080@0.0.1858.1080" timestamp="1595646562541" />
+    <state x="791" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1595580946893">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="791" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1595580946893" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cbg2006/src/cn/tedu/day12/review.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

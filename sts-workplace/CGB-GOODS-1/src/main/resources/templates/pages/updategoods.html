@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Goods Update Page</title>
+</head>
+<style type="text/css">
+ul li{list-style-type:none}
+</style>
+<body>
+	<h1>Goods Update page</h1>
+	<button>
+		<a href="#" th:href="@{/goods/returnToFindAll}">返回</a>
+	</button>
+	<form th:action="@{/goods/goodsUpdate}" method="post">
+		<ul>
+			<input type="hidden" th:value="${good.id}" name="id" />
+			<li>name:<input type="text" th:value="${good.name}" name="name" />
+			<li>remark:<textarea rows="5" th:text="${good.remark}" cols="30" name="remark"></textarea>
+			<li><input type="submit" value="Update Goods" />
+		</ul>
+	</form>
+</body>
+</html>

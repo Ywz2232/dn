@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<title>Activity Page</title>
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+	<h1>Activity page</h1>
+	<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Add Activity
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Activity Information</h4>
+      </div>
+      <div class="modal-body">
+        <form id="AAForm" th:action="@{/activity/activityInsert}" method="post">
+          <div class="form-group">
+            <label for="titleId" class="control-label">Title:</label>
+            <input type="text" class="form-control" id="titleId" name="title">
+          </div>
+          <div class="form-group">
+            <label for="categoryId" class="control-label">Category:</label>
+            <input type="text" class="form-control" id="categoryId" name="category"></input>
+          </div>
+          <div class="form-group">
+            <label for="startTimeId" class="control-label">StartTime:</label>
+            <input type="datetime-local" class="form-control" id="startTimeId" name="startTime"></input>
+          </div>
+          <div class="form-group">
+            <label for="endTimeId" class="control-label">EndTime:</label>
+            <input type="datetime-local" class="form-control" id="endTimeId" name="endTime"></input>
+          </div>
+          <div class="form-group">
+            <label for="remarkId" class="control-label">Remark:</label>
+            <textarea class="form-control" id="remarkId" name="remark"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="stateId" class="control-label">State:</label>
+            <input type="text" class="form-control" id="stateId" name="state"></input>
+          </div>
+          <div class="form-group">
+            <label for="createdUserId" class="control-label">CreatedUser:</label>
+            <input type="text" class="form-control" id="createdUserId" name="createdUser"></input>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="doSaveActivity()">Save Activity</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- update -->
+<div class="modal fade" id="Update" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Activity Information</h4>
+      </div>
+      <div class="modal-body">
+        <form id="BBForm">
+        	<input id="idId2" type="hidden" name="id" />
+          <div class="form-group">
+            <label for="titleId" class="control-label">Title:</label>
+            <input type="text" class="form-control" id="titleId2" name="title">
+          </div>
+          <div class="form-group">
+            <label for="categoryId" class="control-label">Category:</label>
+            <input type="text" class="form-control" id="categoryId2" name="category"></input>
+          </div>
+          <div class="form-group">
+            <label for="startTimeId" class="control-label">StartTime:</label>
+            <input type="datetime-local" class="form-control" id="startTimeId2" name="startTime"></input>
+          </div>
+          <div class="form-group">
+            <label for="endTimeId" class="control-label">EndTime:</label>
+            <input type="datetime-local" class="form-control" id="endTimeId2" name="endTime"></input>
+          </div>
+          <div class="form-group">
+            <label for="remarkId" class="control-label">Remark:</label>
+            <textarea class="form-control" id="remarkId2" name="remark"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="stateId" class="control-label">State:</label>
+            <input type="text" class="form-control" id="stateId2" name="state"></input>
+          </div>
+          <div class="form-group">
+            <label for="createdUserId" class="control-label">CreatedUser:</label>
+            <input type="text" class="form-control" id="createdUserId2" name="createdUser"></input>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="doUpdateActivity()">Save Activity</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+	<form th:action="@{/activity/findActivityById}" method="post">
+		<table class="table table-bordered table-hover">
+			<tr>
+				<td>通过id查询</td>
+				<td><input type="text" name="id" /></td>
+				<td><input type="submit" value="find" /></td>
+				<td><button><a href="#" th:href="@{/activity/returnActivityPages}">返回</a></button></td>
+				<td><button><a href="#" th:href="@{/activity/addActivityPages}">Add Activity</a></button></td>
+			</tr>
+		</table>
+	</form>
+	<table class="table table-bordered table-hover">
+		<thead>
+			<th>id</th>
+			<th>title</th>
+			<th>category</th>
+			<th>startTime</th>
+			<th>endTime</th>
+			<th>remark</th>
+			<th>state</th>
+			<th>createdTime</th>
+			<th>createdUser</th>
+			<th align="center" colspan="2">operation</th>
+		</thead>
+		<tbody id="tbodyId">
+			<!-- <tr th:each="ac:${activity}">
+				<td th:text="${ac.id}"></td>
+				<td th:text="${ac.title}"></td>
+				<td th:text="${ac.category}"></td>
+				<td th:text="${#dates.format(ac.startTime, 'yyyy-MM-dd HH:mm:ss')}"></td>
+				<td th:text="${#dates.format(ac.endTime, 'yyyy-MM-dd HH:mm:ss')}"></td>
+				<td th:text="${ac.remark}"></td>
+				<td th:text="${ac.state}"></td>
+				<td th:text="${#dates.format(ac.createdTime, 'yyyy-MM-dd HH:mm')}"></td>
+				<td th:text="${ac.createdUser}"></td>
+				<td><a href="#" th:href="@{/activity/fingById/{id}(id=${ac.id})}">update</a></td>
+				<td><a href="#" th:href="@{/activity/activityDelete/{id}(id=${ac.id})}">delete</a></td>
+			</tr> -->
+		</tbody>
+	</table>
+</div>
+
+<script type="text/javascript" src="../js/jquery.min.js" ></script>
+ <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	function SA(){
+		let url="/ACT01/activity/findActivities";
+		let params={};
+		$.ajax({
+			url:url,
+			data:params,
+			dataType:"json",
+			success:function(result){
+				ShowActivities(result);
+			}
+		})
+	}
+	SA();
+	
+	function ShowActivities(result){
+		var tBody=$("#tbodyId");
+		tBody.empty();
+		result.forEach(item=>{
+			/* debugger */
+			tBody.append(
+				`<tr>
+					<td>${item.id}</td>
+					<td>${item.title}</td>
+					<td>${item.category}</td>
+					<td>${item.startTime}</td>
+					<td>${item.endTime}</td>
+					<td>${item.remark}</td>
+					<td>${item.state==1?'有效':'已结束'}</td>
+					<td>${item.createdTime}</td>
+					<td>${item.createdUser}</td>
+					<td>
+						<button type="button" onclick="deleteACT(${item.id})">deleteActivity</button>
+						<button type="button" onclick="getACT(${item.id})">Update Activity</button>
+					</td>
+				</tr>`
+			)
+		})
+	}
+	function doSaveActivity(){
+		//$("#AAForm").submit();
+		//异步提交
+		//1.定义url 2.定义参数 3.发送异步请求
+		let url="/ACT01/activity/activityInsert";
+		/* let params={
+				title:$("#titleId").val(),
+				category:$("#categoryId").val(),
+				startTime:$("#startTimeId").val(),
+				endTime:$("#endTimeId").val(),
+				remark:$("#remarkId").val(),
+				state:$("#stateId").val(),
+				createdUser:$("#createdUserId").val()
+		}; */
+		let params=$("#AAForm").serialize();
+		$.ajax({
+			type:"post",
+			url:url,
+			data:params,
+			success:function(result){
+				alert(result);
+				$("#myModal").modal('hide');
+				SA();
+			}
+		})
+	}
+	
+	function deleteACT(id){
+		let url="/ACT01/activity/activityDelete";
+		let params={'id':id};
+		$.ajax({
+			type:"post",
+			url:url,
+			data:params,
+			success:function(result){
+				alert(result);
+				SA();
+			}
+		})
+	}
+	
+	function getACT(id){
+		//debugger
+		let url="/ACT01/activity/fingById";
+		let params={'id':id};
+		$.ajax({
+			type:"post",
+			url:url,
+			data:params,
+			dataType:"json",
+			success:function(result){
+				//debugger
+				SUA(result);
+			}
+		})
+	}
+
+	/* $(".form_datetime").datetimepicker({
+		language:'zh_CN',
+		format:"yyyy-MM-dd hh:ii",
+		autoclose:false
+	}) */
+	
+	function SUA(result){
+		//debugger
+		var dates = result.startTime;
+		dates=dates.toString();
+		dates=dates.replace(/ /,"T")
+		console.log(dates);
+		var datee = result.endTime;
+		datee=datee.toString();
+		datee=datee.replace(/ /,"T")
+		console.log(dates);
+		$("#idId2").val(result.id);
+		$("#titleId2").val(result.title);
+		$("#categoryId2").val(result.category);
+		$("#startTimeId2").val(dates);
+		$("#endTimeId2").val(datee);
+		$("#remarkId2").text(result.remark);
+		$("#stateId2").val(result.state);
+		$("#createdUserId2").val(result.createdUser);
+		$("#Update").modal("show");
+	}
+	
+	function doUpdateActivity(){
+		let url="/ACT01/activity/activityUpdate";
+		let params=$("#BBForm").serialize();
+		$.ajax({
+			type:"post",
+			url:url,
+			data:params,
+			success:function(result){
+				alert(result);
+				$("#Update").modal('hide');
+				SA();
+			}
+		})
+	}
+</script>
+</body>
+</html>

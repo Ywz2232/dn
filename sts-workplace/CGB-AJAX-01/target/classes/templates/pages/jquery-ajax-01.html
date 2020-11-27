@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>The Jquery ajax 01 Page</h1>
+
+<fieldset>
+   <legend>Jquery Ajax function </legend>
+   <button onclick="doGet()">$.get(...)</button>
+   <button onclick="doPost()">$.post(...)</button>
+   <button onclick="doAjax()">$.ajax(...)</button>
+   <button onclick="doLoad()">$.load(...)</button>
+   <span id="resultId"></span>
+</fieldset>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+     function doGet(){
+    	 //1.请求url
+    	 var url="../jquery/doAjaxGet";
+    	 //2.请求参数
+    	 var params="msg=hello jquery ajax get method";
+    	 //3.发送异步请求
+    	 $.get(url,params,(result)=>{
+    		 $("#resultId").html(result);
+    	 })
+     }
+     function doPost(){
+    	 //1.请求url
+    	 var url="../jquery/doAjaxPost";
+    	 //2.请求参数
+    	 var params="id=10&&title=AAA";
+    	 //3.发送异步请求
+    	 $.post(url,params,(result)=>{
+    		 $("#resultId").html(result);
+    	 })
+     }
+     function doAjax(){
+    	 //1.请求url
+    	 var url="../jquery/doAjaxPost";
+    	 //2.请求参数
+    	 var params="id=10&&title=AAA";
+    	 $.ajax({
+    		 type:'post',
+    		 url:url,
+    		 data:params,
+    		 dataType:'text',
+    		 async:true,
+    		 success:function(result){
+    			 $("#resultId").html(result);
+    		 },
+    		 error:function(xhr){
+    			 console.log(xhr.statusText);
+    			 $("#resultId").html(xhr.statusText);
+    		 }
+    	 })
+     }
+     
+     function doLoad(){
+    	//1.请求url
+    	 var url="../jquery/doAjaxGet";
+    	 //2.请求参数
+    	 var params="msg=hello jquery ajax get method";
+    	 //3.发送异步请求
+    	 $("#resultId").load(url,params);
+     }
+</script>
+
+</body>
+</html>

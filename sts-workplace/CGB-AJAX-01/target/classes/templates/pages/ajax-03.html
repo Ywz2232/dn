@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ajax03</title>
+<script type="text/javascript" src="../js/ajax.js"></script>
+</head>
+<body>
+<h1>Ajax03 Page</h1>
+
+<fieldset>
+	<legend>Ajax 表单请求</legend>
+	<form action="#">
+		<input type="text" name="name" id="nameId" onblur="doCheck()" onfocus="doClear()" />
+		<input type="button" onclick="doSave()" value="Save"></input>
+	</form>
+	<span id="resultId"></span><br/>
+	<span id="checkId" ></span>
+</fieldset>
+
+</body>
+
+<script type="text/javascript">
+
+	function doSave(){
+		let url="http://localhost:8080/AJ01/ajax/doSave";
+		let params=`name=${document.forms[0].name.value}`;
+		doAjaxPost(url,params,function(result){
+			document.getElementById("resultId").innerHTML=`${result}`;
+		})
+	}
+	//检测名字是否存在
+	
+	function doCheck(){
+		var url="doCheck";
+		var params=`name=${document.forms[0].name.value}`;
+		doAjaxGet(url,params,function(result){
+			document.getElementById("checkId").innerHTML=
+				`<font color="red">${result}<font>`;
+		})
+	}
+	
+	function doClear(){
+		document.getElementById("checkId").innerHTML="";
+	}
+</script>
+</html>

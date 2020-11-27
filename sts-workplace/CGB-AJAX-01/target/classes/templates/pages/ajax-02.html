@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ajax02</title>
+</head>
+<body>
+<h1>Ajax02 Page</h1>
+
+<fieldset>
+	<legend>Ajax 表单请求</legend>
+	<form action="#">
+		<input type="text" name="name" id="nameId" onblur="doCheck()" onfocus="doClear()" />
+		<input type="button" onclick="doSave()" value="Save"></input>
+	</form>
+	<span id="resultId"></span><br/>
+	<span id="checkId" ></span>
+</fieldset>
+
+</body>
+<script type="text/javascript">
+	function doSave(){
+		//1.创建xhr对象
+		var xhr = new XMLHttpRequest();
+		//2.定义xhr对象的状态监听函数
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4&&xhr.status==200){
+                var result=document.getElementById("resultId");
+                result.innerHTML=xhr.responseText;
+           }
+		}
+		//3.建立连接(携带参数)
+		xhr.open("POST","http://localhost:8080/AJ01/ajax/doSave",true);
+		xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		//4.发送请求
+		var name00 = document.forms[0].name.value;
+		//构建参数对象
+		//var params="name="+name00;//淘汰
+		var params=`name=${name00}`;//一种新的写法,这种写法称之为模板字符串
+		//const(常量) paramss={"name":name00};//javascript中的对象(原生ajax方式不可以直接取值)
+	
+		xhr.send(params);
+	}
+	//检测名字是否存在
+	function doCheck(){
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4&&xhr.status==200){
+                var result=document.getElementById("checkId");
+                result.innerHTML=`<font color='red'>${xhr.responseText}</font>`;
+           }
+		}
+		let name = document.forms[0].name.value;
+		xhr.open("GET",`doCheck?name=${name}`,true);
+		xhr.send(null);
+	}
+	
+	function doClear(){
+		document.getElementById("checkId").innerHTML="";
+	}
+</script>
+</html>

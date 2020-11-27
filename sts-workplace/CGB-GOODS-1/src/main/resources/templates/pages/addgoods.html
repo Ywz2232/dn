@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Goods Add Page</title>
+</head>
+<style type="text/css">
+ul li{list-style-type:none}
+</style>
+<body>
+	<h1>Goods Add Page</h1>
+	<button>
+		<a href="#" th:href="@{/goods/returnToFindAll}">返回</a>
+	</button>
+	<form th:action="@{/goods/goodsInsert}" method="post">
+		<ul>
+			<li>name:<input type="text" name="name" />
+			<li>remark:<textarea rows="5" cols="30" name="remark"></textarea>
+			<li><input type="submit" value="Save Goods" />
+		</ul>
+	</form>
+</body>
+</html>

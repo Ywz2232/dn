@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:sdd" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d26f1cb-dc2f-4eb2-89a3-3c9aac19c383" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/SpringBoot-Shiro-Vue-master/back" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="D:\JavaDevelop\apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hr29b61z3IDy9jr2iAtC4SwAQz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.19885057" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ideaWork\cgb2006-s4\springboot-demo3-web\src\main\webapp" />
+      <recent name="D:\ideaWork\cgb2006-s4\springboot-demo3-web\src\main" />
+      <recent name="D:\ideaWork\cgb2006-s4\springboot-demo3-web\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.jt" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaWork\cgb2006-s4\SpringBoot-Shiro-Vue-master\back\src" />
+      <recent name="D:\ideaWork\cgb2006-s4\jt" />
+      <recent name="D:\ideaWork\cgb2006-s4\jt\jt-common\src\main\java\com\jt\service" />
+      <recent name="D:\ideaWork\cgb2006-s4\jt\jt-common\src\main\java\com\jt\pojo" />
+      <recent name="D:\ideaWork\cgb2006-s4\jt\jt-cart\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MyApplication">
+    <configuration name="MyApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.heeexy.example.MyApplication" />
+      <module name="example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SpringBoot-Shiro-Vue-master/back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.heeexy.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootRun-Order" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.jt.SpringBootRun" />
+      <module name="jt-order" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jt/jt-order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBoot_Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jt.SpringBoot_Run" />
+      <module name="dubbo-jt-demo-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDate.nextWeek" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jt-web" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestDate" />
+      <option name="METHOD_NAME" value="nextWeek" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test14.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dubbo-jt-demo-provider2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test14" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="example" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.heeexy.example.MyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootRun" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="jt-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jt.SpringBootRun" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDemo1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-demo1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jt.SpringbootDemo1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDemo3WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-demo3-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jt.SpringbootDemo3WebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SpringbootDemo3WebApplication" />
+      <item itemvalue="Application.SpringBootRun-Manage" />
+      <item itemvalue="Application.SpringBootRun-SSO" />
+      <item itemvalue="Application.SpringBootRun-Web" />
+      <item itemvalue="Application.MyApplication" />
+      <item itemvalue="Application.SpringBootRun-Order" />
+      <item itemvalue="Application.SpringBoot_Run" />
+      <item itemvalue="JUnit.TestDate.nextWeek" />
+      <item itemvalue="JUnit.test14.test01" />
+      <item itemvalue="Spring Boot.SpringbootDemo1Application" />
+      <item itemvalue="Spring Boot.MyApplication" />
+      <item itemvalue="Spring Boot.SpringBootRun" />
+      <item itemvalue="Spring Boot.SpringbootDemo3WebApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyApplication" />
+        <item itemvalue="JUnit.TestDate.nextWeek" />
+        <item itemvalue="JUnit.test14.test01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d26f1cb-dc2f-4eb2-89a3-3c9aac19c383" name="Default Changelist" comment="" />
+      <created>1600754739171</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600754739171</updated>
+      <workItem from="1604057145489" duration="2881000" />
+      <workItem from="1604111102087" duration="14000" />
+      <workItem from="1604219640310" duration="774000" />
+      <workItem from="1604305422755" duration="2652000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="383" y="194" width="1092" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603347272880">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="383" y="194" width="1092" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1603347272880" />
+    <state x="751" y="339" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600834076139">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="751" y="339" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1600834076139" />
+    <state x="734" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1603529696673">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="734" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1603529696673" />
+    <state x="658" y="340" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1602833119279">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="658" y="340" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1602833119279" />
+    <state x="658" y="217" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1600932855347">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="658" y="217" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1600932855347" />
+    <state x="218" y="174" width="802" height="580" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1600760676591">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="218" y="174" width="802" height="580" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1600760676591" />
+    <state x="649" y="462" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1603337834837">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="649" y="462" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1603337834837" />
+    <state x="640" y="406" width="578" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603074819525">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="640" y="406" width="578" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1858.1080@0.0.1858.1080" timestamp="1603074819525" />
+    <state x="620" y="419" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1603337839444">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="620" y="419" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1858.1080@0.0.1858.1080" timestamp="1603337839444" />
+    <state x="634" y="83" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601263843103">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="634" y="83" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1601263843103" />
+    <state x="555" y="98" width="748" height="764" key="#检查" timestamp="1600910209554">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="555" y="98" width="748" height="764" key="#检查/0.0.1858.1080@0.0.1858.1080" timestamp="1600910209554" />
+    <state x="409" y="113" key="#项目结构" timestamp="1600932885641">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="409" y="113" key="#项目结构/0.0.1858.1080@0.0.1858.1080" timestamp="1600932885641" />
+    <state x="709" y="294" key="FileChooserDialogImpl" timestamp="1603713440450">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="709" y="294" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1603713440450" />
+    <state width="1814" height="282" key="GridCell.Tab.0.bottom" timestamp="1603884795742">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1814" height="282" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1603884795742" />
+    <state width="1814" height="282" key="GridCell.Tab.0.center" timestamp="1603884795742">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1814" height="282" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1603884795742" />
+    <state width="1814" height="282" key="GridCell.Tab.0.left" timestamp="1603884795742">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1814" height="282" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1603884795742" />
+    <state width="1814" height="282" key="GridCell.Tab.0.right" timestamp="1603884795742">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1814" height="282" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1603884795742" />
+    <state width="1814" height="358" key="GridCell.Tab.1.bottom" timestamp="1603371851448">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1814" height="358" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1603371851448" />
+    <state width="1814" height="358" key="GridCell.Tab.1.center" timestamp="1603371851448">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1814" height="358" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1603371851448" />
+    <state width="1814" height="358" key="GridCell.Tab.1.left" timestamp="1603371851448">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1814" height="358" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1603371851448" />
+    <state width="1814" height="358" key="GridCell.Tab.1.right" timestamp="1603371851448">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1814" height="358" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1603371851448" />
+    <state x="509" y="273" key="IDE.errors.dialog" timestamp="1600833462592">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="509" y="273" key="IDE.errors.dialog/0.0.1858.1080@0.0.1858.1080" timestamp="1600833462592" />
+    <state x="569" y="242" key="NewModule_or_Project.wizard" timestamp="1603713509694">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="569" y="242" key="NewModule_or_Project.wizard/0.0.1858.1080@0.0.1858.1080" timestamp="1603713509694" />
+    <state x="500" y="354" key="Registry" timestamp="1600757191069">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="500" y="354" key="Registry/0.0.1858.1080@0.0.1858.1080" timestamp="1600757191069" />
+    <state x="647" y="113" key="SettingsEditor" timestamp="1603455330969">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="647" y="113" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1603455330969" />
+    <state x="521" y="272" key="Vcs.Push.Dialog.v2" timestamp="1604059507716">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="521" y="272" key="Vcs.Push.Dialog.v2/0.0.1858.1080@0.0.1858.1080" timestamp="1604059507716" />
+    <state x="630" y="138" width="723" height="891" key="find.popup" timestamp="1604307962610">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="630" y="138" width="723" height="891" key="find.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1604307962610" />
+    <state x="459" y="149" width="1168" height="782" key="new project wizard" timestamp="1603418605487">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="459" y="149" width="1168" height="782" key="new project wizard/0.0.1858.1080@0.0.1858.1080" timestamp="1603418605487" />
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603354015573">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="592" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1858.1080@0.0.1858.1080" timestamp="1603354015573" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cgb2006_s4$SpringBootRun_Order.ic" NAME="SpringBootRun-Order Coverage Results" MODIFIED="1603357546789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jt.*</FILTER>
+    </SUITE>
+  </component>
+</project>

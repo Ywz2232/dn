@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>update goods</title>
+<style type="text/css">
+  ul li {list-style-type: none}
+</style>
+</head>
+<body>
+<h1>Goods Update Pages</h1>
+   <form th:action="@{/goods/doUpdateGoods}" method="post">
+      <ul>
+      	<input type="hidden" th:value="${good.id}" name="id">
+        <li>name:<input type="text" th:value="${good.name}" name="name">
+        <li>remark:<textarea th:text="${good.remark}" rows="3" cols="30" name="remark"></textarea>
+        <li><input type="submit" value="Update Goods">
+       </ul>
+   </form>
+</body>
+</html>

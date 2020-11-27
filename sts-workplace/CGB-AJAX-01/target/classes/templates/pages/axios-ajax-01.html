@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+	function doGet(){
+		axios.get('../jquery/doAjaxGet',{params:{msg:"xcwloveu"}})
+		  .then((response)=> {//服务器响应状态为200时执行then函数内容
+		    console.log(response);
+		    document.getElementById("resultId").innerHTML=response.data;
+	    	 
+		  })
+		  .catch(function (error) {
+		    console.log(error);
+		  });
+	}
+	
+	function doPost(){
+		axios.post('../jquery/doAxiosPost', {
+		    id: 3,
+		    title: 'xcwloveu'
+		  })
+		  .then(function (response) {
+		    console.log(response);
+		    document.getElementById("resultId").innerHTML=response.data;
+		  })
+		  .catch(function (error) {
+		    console.log(error);
+		  });
+	}
+</script>
+<body>
+<fieldset>
+   <legend>Jquery Ajax function </legend>
+   <button onclick="doGet()">$.axios get(...)</button>
+   <button onclick="doPost()">$.axios post(...)</button>
+   <span id="resultId"></span>
+</fieldset>
+
+</body>
+</html>

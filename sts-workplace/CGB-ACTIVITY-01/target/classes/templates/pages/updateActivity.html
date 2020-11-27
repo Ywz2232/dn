@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update Activity</title>
+</head>
+<body>
+<h1>Activity Update Page</h1>
+	<button>
+		<a href="#" th:href="@{/activity/returnActivityPages}">返回</a>
+	</button>	
+	<form th:action="@{/activity/activityUpdate}" method="post">
+		<table th:each="ac:${activity}" border="3px" cellspacing="0px" cellpadding="5px" width="30%" bordercolor="red"  bgcolor="pink">
+			<input type="hidden" th:value="${ac.id}" name="id" />
+			<tr><td>title:</td><td><input type="text" th:value="${ac.title}" name="title" /></td></tr>
+			<tr><td>category:</td><td><input type="text" th:value="${ac.category}" name="category" /></td></tr>
+			<tr><td>startTime:</td><td><input type="datetime-local" 
+				th:value="${#dates.format(ac.startTime, &quot;yyyy-MM-dd&apos;T&apos;HH:mm&quot;)}" name="startTime" /></td></tr>
+			<tr><td>endTime:</td><td><input type="datetime-local" 
+				th:value="${#dates.format(ac.endTime, &quot;yyyy-MM-dd&apos;T&apos;HH:mm&quot;)}" name="endTime" /></td></tr>
+			<tr><td>remark:</td><td><textarea rows="5" th:text="${ac.remark}" cols="30" name="remark"></textarea></td></tr>
+			<tr><td>state:</td><td><input type="text" th:value="${ac.state}" name="state" /></td></tr>
+			<tr><td>createdUser:</td><td><input type="text" th:value="${ac.createdUser}" name="createdUser" /></td></tr>
+			<tr><td colspan="2" align="center"><input type="submit" value="Update Activity" /></td></tr>
+		</table>
+	</form>
+</body>
+</html>

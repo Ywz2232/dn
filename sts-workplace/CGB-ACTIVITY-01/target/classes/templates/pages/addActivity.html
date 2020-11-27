@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Activity</title>
+</head>
+<body>
+<h1>Activity Add Page</h1>
+	<button>
+		<a href="#" th:href="@{/activity/returnActivityPages}">返回</a>
+	</button>
+	<form th:action="@{/activity/activityInsert}" method="post">
+		<table border="3px" cellspacing="0px" cellpadding="5px" width="30%" bordercolor="red"  bgcolor="pink">
+			<tr><td>title:</td><td><input type="text" name="title" /></td></tr>
+			<tr><td>category:</td><td><input type="text" name="category" /></td></tr>
+			<tr><td>startTime:</td><td><input type="datetime-local" name="startTime" /></td></tr>
+			<tr><td>endTime:</td><td><input type="datetime-local" name="endTime" /></td></tr>
+			<tr><td>remark:</td><td><textarea rows="5" cols="30" name="remark"></textarea></td></tr>
+			<tr><td>state:</td><td><input type="text" name="state" /></td></tr>
+			<tr><td>createdUser:</td><td><input type="text" name="createdUser" /></td></tr>
+			<tr><td colspan="2" align="center"><input type="submit" value="Save Activity" /></td></tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Goods Pages</title>
+</head>
+<body>
+	<h1>Goods Page</h1>
+	<button>
+		<a href="#" th:href="@{/goods/returnToFindAll}">返回</a>
+	</button>
+	<table>
+		<thead>
+			<th>id</th>
+			<th>name</th>
+			<th>remark</th>
+			<th>createdTime</th>
+			<th>operation</th>
+		</thead>
+		<tbody>
+			<tr th:each="g:${goods}">
+				<td th:text="${g.id}"></td>
+				<td th:text="${g.name}"></td>
+				<td th:text="${g.remark}"></td>
+				<td th:text="${#dates.format(g.createdTime, 'yyyy/MM/dd HH:mm')}"></td>
+				<td>
+					<a href="#" th:href="@{/goods/goodsDeleteById/{id}(id=${g.id})}">delete</a>
+				</td>
+				<td>
+					<a href="#" th:href="@{/goods/goodsUpdatePage/{id}(id=${g.id})}">update</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<button >
+		<a href="#" th:href="@{/goods/goodsInsertPage}">add goods</a>
+	</button>
+	<form th:action="@{/goods/findByName}" method="post">
+		<table>
+			<tr>
+				<td>根据name查询</td>
+				<td><input type="text" name="name" /></td>
+				<td><input type="submit" value="Find Goods" /></td>
+			</tr>
+		</table>
+	</form>
+	<form th:action="@{/goods/findByRemark}" method="post">
+		<table>
+			<tr>
+				<td>根据remark查询</td>
+				<td><input type="text" name="remark" /></td>
+				<td><input type="submit" value="Find Goods" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

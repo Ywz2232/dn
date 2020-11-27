@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>goods page</title>
+</head>
+<style type="text/css">
+	table{
+		border:3px solid;
+		cellspacing:0px; 
+		cellpadding:5px ;
+		width:50% ;
+		border-color:blue;
+		align:center;
+		background-color:azure;
+		text-align:center;
+	}
+
+</style>
+<body>
+	<h1>this is a goods page</h1>
+	<table >
+		<thead>
+			<th>id</th>
+			<th>name</th>
+			<th>remark</th>
+			<th>createdTime</th>
+			<th>operation</th>
+		</thead>
+		<tbody>
+			<tr th:each="g:${goods}">
+				<td th:text="${g.id}"></td>
+				<td th:text="${g.name}"></td>
+				<td th:text="${g.remark}"></td>
+				<td th:text="${#dates.format(g.createdTime, 'yyyy/MM/dd HH:mm')}"></td>
+				<td>
+					<a href="#" th:href="@{/goods/doDeleteById/{id}(id=${g.id})}">delete</a>
+				</td>
+				<td>
+					<a href="#" th:href="@{/goods/doupdateById/{id}(id=${g.id})}">update</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<button><a th:href="@{/goods/doaddgoods}">add goods</a></button>
+</body>
+</html>
